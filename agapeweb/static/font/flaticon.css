@@ -1,0 +1,71 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 07/07/2020 07:04
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-medical-insurance:before { content: "\f100"; }
+.flaticon-car-insurance:before { content: "\f101"; }
+.flaticon-safe-flight:before { content: "\f102"; }
+.flaticon-family:before { content: "\f103"; }
+.flaticon-certificate:before { content: "\f104"; }
+.flaticon-job-search:before { content: "\f105"; }
+.flaticon-money:before { content: "\f106"; }
+.flaticon-password:before { content: "\f107"; }
+
+.flaticon-001-accounting:before { content: "\f100"; }
+.flaticon-002-analysis:before { content: "\f101"; }
+.flaticon-003-benefit:before { content: "\f102"; }
+.flaticon-004-briefcase:before { content: "\f103"; }
+.flaticon-005-incentive:before { content: "\f104"; }
+.flaticon-006-report:before { content: "\f105"; }
+.flaticon-007-call-center:before { content: "\f106"; }
+.flaticon-008-company:before { content: "\f107"; }
+.flaticon-009-computer:before { content: "\f108"; }
+.flaticon-010-conference:before { content: "\f109"; }
+.flaticon-011-consultation:before { content: "\f10a"; }
+.flaticon-012-consumer:before { content: "\f10b"; }
+.flaticon-013-focus:before { content: "\f10c"; }
+.flaticon-014-goal:before { content: "\f10d"; }
+.flaticon-015-goal-1:before { content: "\f10e"; }
+.flaticon-016-growth:before { content: "\f10f"; }
+.flaticon-017-growth-1:before { content: "\f110"; }
+.flaticon-018-investment:before { content: "\f111"; }
+.flaticon-019-invoice:before { content: "\f112"; }
+.flaticon-020-leadership:before { content: "\f113"; }
+.flaticon-021-workspace:before { content: "\f114"; }
+.flaticon-022-handshake:before { content: "\f115"; }
+.flaticon-023-ecommerce:before { content: "\f116"; }
+.flaticon-024-report-1:before { content: "\f117"; }
+.flaticon-025-maze:before { content: "\f118"; }
+.flaticon-026-solution:before { content: "\f119"; }
+.flaticon-027-strategy:before { content: "\f11a"; }
+.flaticon-028-presentation:before { content: "\f11b"; }
+.flaticon-029-risk:before { content: "\f11c"; }
+.flaticon-030-vision:before { content: "\f11d"; }
