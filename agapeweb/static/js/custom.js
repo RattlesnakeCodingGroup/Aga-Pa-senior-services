@@ -148,8 +148,8 @@ $(function () {
     $('.service-slick').slick({
         infinite: true,
         autoplaySpeed: 3000,
-        prevArrow: '<i class="fa fa-angle-right servNext"></i>',
-        nextArrow: '<i class="fa fa-angle-left servprev"></i>',
+        prevArrow: '<i class="fa fa-angle-left servprev"></i>',
+        nextArrow: '<i class="fa fa-angle-right servNext"></i>',
         autoplay: true,
         arrows: true,
         slidesToShow: 3,
