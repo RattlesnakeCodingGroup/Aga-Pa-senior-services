@@ -5,10 +5,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+{#    <meta http-equiv="x-ua-compatible" content="ie=edge">#}
     <title>Aga-Pa Senior Resources</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="image" property="og:image" content="{%static 'images/mobilelogo.png' %}" >
+
     <!---Favicon Icon-->
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/agapa.ico' %}">
 
@@ -61,23 +63,26 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-1 col-1">
+                    <div class="col-lg-4 col-md-1 col-1">
                         <div class="logo">
-                            <a class="navbar-brand" href="index.html"><img src="{% static 'images/finalagapelogo.webp' %}" class="img-fluid" alt="logo"/></a>
+                            <a class="navbar-brand" href="#home"><img src="{% static 'images/finalagapelogo1.webp' %}" class="img-fluid" alt="logo"/></a>
                         </div>
                     </div>
 
-                    <div class="col-lg-1 offset-lg-1 col-md-1 col-1 pr0">
+                    <div class="col-lg-1  col-md-1 col-1 pr0">
                         <div class="menu-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-3 pl0">
+                    <div class="col-lg-2 col-md-3 col-3 pl0">
                         <div class="subheader-text">
                             <p>Location</p>
                             <h5>
                                 1319 Calle Del Sol Circle, Port Orange, Florida
                             </h5>
+                            <br>
+                            <h6 style="text-decoration: underline">Hours of operation</h6>
+                            <h7>Monday-Friday<br> 9AM - 5 PM</h7>
                         </div>
 
                     </div>
@@ -86,12 +91,17 @@
                             <i class="fas fa-phone"></i>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-3 pl0 pr0">
+                    <div class="col-lg-2 col-md-2 col-3 pl0 pr0">
                         <div class="subheader-text">
                             <p>Phone</p>
                             <h5>
                                 (407) 758 7236
                             </h5>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 style="text-decoration: underline">Counties Serving</h6>
+                            <h7>Volusia, Flagler, Orange, Osceola, Lake Marion, Sumter, Levy, Alachua</h7>
                         </div>
                     </div>
                     <div class="col-lg-1 col-md-1 col-1 pr0">
@@ -107,7 +117,9 @@
                             </h6>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
         <!-- NAV AREA CSS -->
@@ -125,9 +137,9 @@
 
                         <li class="nav-item"><a class="nav-link" href="#aboutus"><span data-hover="About">About us</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#service"><span data-hover="Services">Our Services</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#testimonial"><span data-hover="Services">Testimonials</span></a></li>
-
-
+{#                        <li class="nav-item"><a class="nav-link" href="#testimonial"><span data-hover="Services">Testimonials</span></a></li>#}
+                        <li class="nav-item"><a class="nav-link" href="#experience"><span data-hover="Services">Experience</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team"><span data-hover="Services">Partners</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact"><span data-hover="Contact">Contact</span></a></li>
                     </ul>
                 </div>
@@ -140,16 +152,17 @@
         <nav id='cssmenu' class="hidden mobile">
             <div class="logo">
                 <a href="index.html" class="logo">
-                    <img src="{% static 'images/finalagapelogo.webp' %}" class="img-responsive" alt="">
+                    <img src="{% static 'images/mobilelogo.webp' %}" class="img-responsive" alt="">
                 </a>
             </div>
             <div id="head-mobile"></div>
             <div class="button"><i class="more-less fa fa-align-right"></i></div>
             <ul>
-                <li><a href="#banner" class="active">Home</a></li>
-                <li><a href="about-us.html">About us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
                 <li><a href="#service">Our Services</a></li>
-                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#team">Partners</a></li>
 
                 <li class="nav-item"><a href="#contact">Contact</a></li>
 
@@ -179,7 +192,7 @@
                                 <p>Helping seniors and veterans live a quality, safe, and meaningful life in their Golden
                                     Years at a place they can call HOME.</p>
 
-                                <a class="btn-shape btn banner-btn btn-4" data-in="slideUp" data-out="slideDown" data-duration="800" data-delay="300" href="#about">Explore More</a>
+                                <a class="btn-shape btn banner-btn btn-4" data-in="slideUp" data-out="slideDown" data-duration="800" data-delay="300" href="#aboutus">Explore More</a>
 
                             </div>
                         </div>
@@ -243,6 +256,8 @@
                             needs.</p>
 
 
+
+
                     </div>
 
                 </div>
@@ -268,8 +283,8 @@
                         <div class="col-md-3 col-9">
                             <div class="fun-facts-item">
                                 <h3 class="title odometer" data-count="3,000">00</h3>
-                                <span>+ Secured</span>
-                                <p>Financial assistance</p>
+                                <span>+ customers</span>
+                                <p>Financially assisted</p>
                             </div>
                         </div>
                         <div class="col-md-1 col-3 no-padding">
@@ -324,8 +339,9 @@
                             <i class="flaticon-011-consultation"></i>
                         </div>
                         <h5>Consultation</h5>
-                        <p>We offer FREE consultation and assistance to determine financial, physical and mental eligibility. </p>
-                        <div><a class="btn btn-4 btn-ser" href="#">Get a Quote</a></div>
+                        <p>We offer FREE consultation and assistance to determine financial, physical and mental eligibility. Call (407)-758-7236 to determine how we can
+help you </p>
+                        <div><a class="btn btn-4 btn-ser" href="tel:4077587236">Call Us</a></div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -334,8 +350,9 @@
                             <i class="flaticon-012-consumer"></i>
                         </div>
                         <h5>Counseling</h5>
-                        <p>We offer counseling to help find the best assistance needed.  </p>
-                        <div><a class="btn btn-4 btn-ser" href="#">Get a Quote</a></div>
+                        <p>We offer counseling to help find the best assistance needed. Our counseling is worry and hassle free. We provide a caring environment to help meet your needs no matter the situation. Call (407)-758-7236
+                        to determine your needs.</p>
+                        <div><a class="btn btn-4 btn-ser" href="tel:4077587236">Call Us</a></div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -343,9 +360,10 @@
                         <div>
                             <i class="flaticon-025-maze"></i>
                         </div>
-                        <h5>Unique Placement</h5>
-                        <p>We will personally provide you with a tour of different facilities through video tours and interviews with residents and staff. </p>
-                        <div><a class="btn btn-4 btn-ser" href="#">Get a Quote</a></div>
+                        <h5>Unique Placement Tool</h5>
+                        <p>Our “VIRTUAL TOUR” brings the facility to you through video tours of
+our facility “partners”, it EMPOWERS you to choose which facility is best suited for you. </p>
+                        <div><a class="btn btn-4 btn-ser" href="tel:4077587236">For Serious Candidates</a></div>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -355,12 +373,84 @@
                         </div>
                         <h5>Assistance</h5>
                         <p>We offer assistance in filling-up forms required for admission to greatly simplify the process. We also offer assistance in applying for Medicaid or V.A. financial assistance. </p>
-                        <div><a class="btn btn-4 btn-ser" href="#">Get a Quote</a></div>
+                        <div><a class="btn btn-4 btn-ser" href="tel:4077587236">Let's Meet</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="additional" class="service section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 ">
+                    <div class="heading b-text text-center">
+                        <h5>for a fee</h5>
+                        <h2>Additional Services</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row doctor-slick">
+                <div class="col-md-4">
+                    <div >
+                        <h3 class="text-center" style="text-decoration: underline; ">Services for facility owners</h3>
+                        <ul style="content:attr(aria-label);font-size:100%; font-weight:bold;margin-left:35px;" >
+
+                            <br>
+                            <li style="list-style-type: circle;"><p>Provide prequalified candidates for placement.</p></li> <br>
+                            <li style="list-style-type: circle"><p><q>Virtual Tour</q> a video of your facility to show to prequalified candidates. This replaces <q>facility
+                                tour</q> and it will help with decision making.</p></li><br>
+                            <li style="list-style-type: circle;"><p>Ready for admission candidates that have all the documentation needed for admission.</p></li> <br>
+                            <li style="list-style-type: circle;"><p>Assistance in applying for Medicaid Long Term Care or V.A. financial assistance. (no fee)</p></li> <br>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div >
+
+                        <h3 class="text-center" style="text-decoration: underline; ">Offering Assistance with</h3>
+                        <ul style="content:attr(aria-label);font-size:100%; font-weight:bold;margin-left:35px;" >
+
+                            <br>
+                            <li style="list-style-type: circle;"><p>Preparing for biennial AHCA survey.</p></li> <br>
+                            <li style="list-style-type: circle"><p>Correct deficiencies.</p></li><br>
+                            <li style="list-style-type: circle;"><p>Prepare CEMP</p></li> <br>
+                            <li style="list-style-type: circle;"><p>Prepare other documents requested by AHCA and other agencies.</p></li> <br>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div >
+                        <h3 class="text-center" style="text-decoration: underline; ">Services for New Facility Owner/Buyer</h3>
+                        <ul style="content:attr(aria-label);font-size:100%; font-weight:bold;margin-left:30px;" >
+
+                            <br>
+                            <li style="list-style-type: circle;"><p>Consultation- to provide important information regarding the pros and cons of owning a facility.</p></li> <p></p>
+                            <h5 class="text-center" style="text-decoration: underline; ">Assistance in</h5>
+                            <li style="list-style-type: circle"><p>Finding the appropriate location or appropriate facility.</p></li><p></p>
+                            <li style="list-style-type: circle;"><p>Preparing the necessary documents to apply for license.</p></li> <p></p>
+                            <li style="list-style-type: circle;"><p>Applying for facility license.</p></li> <br>
+                            <li style="list-style-type: circle;"><p>Preparing the facility for inspections prior to acquiring license.</p></li> <p></p>
+                            <li style="list-style-type: circle;"><p>Preparing facility documents/forms necessary for daily/weekly/monthly operations.</p></li> <p></p>
+                            <li style="list-style-type: circle;"><p>Acquiring the appropriate staffing.</p></li> <p></p>
+                            <li style="list-style-type: circle;"><p>Securing 3 rd party services.</p></li> <p></p>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- =============================
         End: service Part
     ============================= -->
@@ -376,87 +466,100 @@
                     <img class="img-fluid" src="{% static 'images/why-choose-us-image.webp' %}" alt="about">
                 </div>
                 <div class="col-lg-7 exp-pad pl0">
+                                            <div class="about-cont">
+                            <div class="heading b-text">
+                                <h5>know more</h5>
+                                <h2>About the Founder</h2>
+                            </div>
+
                     <div class="row exp-in">
+
                         <div class="col-lg-3 col-md-12 text-center">
                             <img src="{% static 'images/experience.webp' %}" class="img-fluid exp" alt="experienced" />
                         </div>
                         <div class="col-lg-9 col-md-12 pl0">
                             <div class="exp-text">
-                                <h5>Years of experiences as a</h5>
-                                <h4>Profesional Service Provider</h4>
+                                <h6>Years of experiences as a</h6>
+                                <h5>Professional Administrator and Advocate for facilities</h5>
 
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="exp-txt">
                                 <p>
-                                    Experience is the first person effects or influence of an event or subject gained through involvement in or exposure to it. The term does not imply that useful or long term learning, or the acquisition of skills necessarily takes place as a
-                                    consequence of the experience.
+                                    I have experienced the good side of the business in the joy I felt working with numerous
+                                    wonderful residents and caring staffs many of whom remained friends with me. Sadly, I
+                                    have also experienced the ugly side of the business. I have witnessed abuse, neglect, and
+                                    exploitations more often committed against residents by families or friends. I was appalled by
+                                    the gross indifference and total disregard by the lawmakers I reported these crimes to. It is this
+                                    reason that motivated me to establish my own company and provide the kind of service many
+                                    companies do not offer, a “TRUE AND HONEST” service for the benefit and protection of the
+                                    residents.
                                 </p>
 
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-12">
-                            <div class="row exp-ser-in">
-                                <div class="col-md-3 col-3">
-                                    <div class="exp-icon1">
-                                        <i class="flaticon-job-search"></i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-9">
-                                    <div class="exp-ser">
-                                        <h4>100%</h4>
-                                        <p>Transperancy</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="row exp-ser-in">
-                                <div class="col-md-3 col-3">
-                                    <div class="exp-icon1">
-                                        <i class="flaticon-money"></i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-9">
-                                    <div class="exp-ser">
-                                        <h4>7 days</h4>
-                                        <p>Money back Guarantee</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="row exp-ser-in">
-                                <div class="col-md-3 col-3">
-                                    <div class="exp-icon1">
-                                        <i class="flaticon-family"></i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-9">
-                                    <div class="exp-ser">
-                                        <h4>24X7</h4>
-                                        <p>Agent Support</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="row exp-ser-in">
-                                <div class="col-md-3 col-3">
-                                    <div class="exp-icon1">
-                                        <i class="flaticon-password"></i>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-9">
-                                    <div class="exp-ser">
-                                        <h4>100%</h4>
-                                        <p>Secure Plan</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{#                        <div class="col-md-6 col-12">#}
+{#                            <div class="row exp-ser-in">#}
+{#                                <div class="col-md-3 col-3">#}
+{#                                    <div class="exp-icon1">#}
+{#                                        <i class="flaticon-006-report"></i>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-md-8 col-9">#}
+{#                                    <div class="exp-ser">#}
+{#                                        <h4>100%</h4>#}
+{#                                        <p>Transperancy</p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-md-6 col-12">#}
+{#                            <div class="row exp-ser-in">#}
+{#                                <div class="col-md-3 col-3">#}
+{#                                    <div class="exp-icon1">#}
+{#                                        <i class="flaticon-007-call-center"></i>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-md-8 col-9">#}
+{#                                    <div class="exp-ser">#}
+{#                                        <h4>%100</h4>#}
+{#                                        <p>True and Honest Service</p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-md-6 col-12">#}
+{#                            <div class="row exp-ser-in">#}
+{#                                <div class="col-md-3 col-3">#}
+{#                                    <div class="exp-icon1">#}
+{#                                        <i class="flaticon-family"></i>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-md-8 col-9">#}
+{#                                    <div class="exp-ser">#}
+{#                                        <h4>24X7</h4>#}
+{#                                        <p>Agent Support</p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-md-6 col-12">#}
+{#                            <div class="row exp-ser-in">#}
+{#                                <div class="col-md-3 col-3">#}
+{#                                    <div class="exp-icon1">#}
+{#                                        <i class="flaticon-password"></i>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="col-md-8 col-9">#}
+{#                                    <div class="exp-ser">#}
+{#                                        <h4>100%</h4>#}
+{#                                        <p>Secure Plan</p>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
 
                     </div>
                 </div>
@@ -472,131 +575,131 @@
     <!-- =============================
         Start: Testimonial Part
     ============================= -->
-    <section id="testimonial" class="testimonial section">
-        <div class="container">
-            <div class="row">
+{#    <section id="testimonial" class="testimonial section">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{##}
+{#                <div class="col-12 ">#}
+{#                    <div class="heading w-text text-center">#}
+{#                        <h5>get to know</h5>#}
+{#                        <h2>Clients Feedbacks</h2>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#            <div class="row testimonial-slick">#}
+{#                <div class="col-md-6">#}
+{#                    <div class="tes-inner">#}
+{#                        <div class="row">#}
+{#                            <div class="col-md-3">#}
+{#                                <div class="test-img">#}
+{#                                    <img src="{% static 'images/testimonial-image-1.jpg' %}" class="img-fluid" alt="testimonial" />#}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <div class="col-md-9 pl0">#}
+{#                                <div class="test-txt">#}
+{#                                    <h4>Micheal Rover</h4>#}
+{#                                    <p>Satisfied Customer</p>#}
+{##}
+{#                                    <ul>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-md-12">#}
+{#                                <div class="test-para">#}
+{#                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6">#}
+{#                    <div class="tes-inner">#}
+{#                        <div class="row">#}
+{#                            <div class="col-md-3">#}
+{#                                <div class="test-img">#}
+{#                                    <img src="{% static 'images/testimonial-image-2.jpg' %}" class="img-fluid" alt="testimonial" />#}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <div class="col-md-9 pl0">#}
+{#                                <div class="test-txt">#}
+{#                                    <h4>Abigali Nain</h4>#}
+{#                                    <p>Satisfied Customer</p>#}
+{##}
+{#                                    <ul>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-md-12">#}
+{#                                <div class="test-para">#}
+{#                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6">#}
+{#                    <div class="tes-inner">#}
+{#                        <div class="row">#}
+{#                            <div class="col-md-3">#}
+{#                                <div class="test-img">#}
+{#                                    <img src="{% static 'images/testimonial-image-1.jpg' %}" class="img-fluid" alt="testimonial" />#}
+{#                                </div>#}
+{##}
+{#                            </div>#}
+{#                            <div class="col-md-9 pl0">#}
+{#                                <div class="test-txt">#}
+{#                                    <h4>Micheal Rover</h4>#}
+{#                                    <p>Satisfied Customer</p>#}
+{##}
+{#                                    <ul>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                        <li><i class="fa fa-star fa-light"></i></li>#}
+{#                                    </ul>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-md-12">#}
+{#                                <div class="test-para">#}
+{#                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#    </section>#}
 
-                <div class="col-12 ">
-                    <div class="heading w-text text-center">
-                        <h5>get to know</h5>
-                        <h2>Clients Feedbacks</h2>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row testimonial-slick">
-                <div class="col-md-6">
-                    <div class="tes-inner">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="test-img">
-                                    <img src="{% static 'images/testimonial-image-1.jpg' %}" class="img-fluid" alt="testimonial" />
-                                </div>
-
-                            </div>
-                            <div class="col-md-9 pl0">
-                                <div class="test-txt">
-                                    <h4>Micheal Rover</h4>
-                                    <p>Satisfied Customer</p>
-
-                                    <ul>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="test-para">
-                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tes-inner">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="test-img">
-                                    <img src="{% static 'images/testimonial-image-2.jpg' %}" class="img-fluid" alt="testimonial" />
-                                </div>
-
-                            </div>
-                            <div class="col-md-9 pl0">
-                                <div class="test-txt">
-                                    <h4>Abigali Nain</h4>
-                                    <p>Satisfied Customer</p>
-
-                                    <ul>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="test-para">
-                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="tes-inner">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="test-img">
-                                    <img src="{% static 'images/testimonial-image-1.jpg' %}" class="img-fluid" alt="testimonial" />
-                                </div>
-
-                            </div>
-                            <div class="col-md-9 pl0">
-                                <div class="test-txt">
-                                    <h4>Micheal Rover</h4>
-                                    <p>Satisfied Customer</p>
-
-                                    <ul>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                        <li><i class="fa fa-star fa-light"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="test-para">
-                                    <p>It’s the BEST insurance company. Loved to get services from you and look forward to working with you again one day! Wishing it’ll get all the success in the world.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =============================
-        End: Testimonial Part
-    ============================= -->
-    <!--========================
-     Team Part HTML Start
-    ==========================-->
-    <section id="team" class="team section">
+{#    <!-- =============================#}
+{#        End: Testimonial Part#}
+{#    ============================= -->#}
+{#    <!--========================#}
+{#     Team Part HTML Start#}
+{#    ==========================-->#}
+    <section id="team" class="service section">
         <div class="container">
             <div class="row">
 
                 <div class="col-12 ">
                     <div class="heading b-text text-center">
-{#                        <h5>know About Us</h5>#}
+                        <h5>know About Us</h5>
                         <h2>Our Partners</h2>
                     </div>
                 </div>
@@ -607,36 +710,36 @@
                 <div class="col-md-4">
                     <div class="team-inner">
                         <div class="team-img text-center">
-                            <img src="{% static 'images/team-image-1.jpg' %}" class="img-fluid" alt="team">
+                            <img src="{% static 'images/facilities.webp' %}" class="img-fluid" alt="team">
                         </div>
                         <div class="team-txt text-center">
-                            <h4>Pairing Plus</h4>
-                            <p class="team-border">Choice of </p>
-                            <p>Phone: +880 1234 567 890</p>
+                            <h4>Facilities</h4>
+                            <p class="team-border">Assisted Living Facilities <br> Memory Care Facilities <br> Independent Living <br> Rehabilitation &amp; Hospice </p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-inner">
                         <div class="team-img text-center">
-                            <img src="{% static 'images/team-image-2.jpg' %}" class="img-fluid" alt="team">
+                            <img src="{% static 'images/nurses.webp' %}" class="img-fluid" alt="team">
                         </div>
                         <div class="team-txt text-center">
-                            <h4>Dr. Truluck</h4>
-                            <p class="team-border">Customer Relationship Officer</p>
-                            <p>Phone: +880 1234 567 890</p>
+                            <h4>Medical Care</h4>
+                            <p class="team-border">Skilled Nursing <br> Doctors <br> Home Health <br> Medical Clinics <br> </p>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-inner">
                         <div class="team-img text-center">
-                            <img src="{% static 'images/team-image-3.jpg' %}" class="img-fluid" alt="team">
+                            <img src="{% static 'images/attorney.webp' %}" class="img-fluid" alt="team">
                         </div>
                         <div class="team-txt text-center">
-                            <h4>Dr. Popwell</h4>
-                            <p class="team-border">Distributor Officer</p>
-                            <p>Phone: +880 1234 567 890</p>
+                            <h4>Legal Care</h4>
+                            <p class="team-border">Estate and Family Planning Attorney <br> Real State Attorney <br> Realtors</p>
+
                         </div>
                     </div>
                 </div>
@@ -645,87 +748,92 @@
         </div>
     </section>
 
-    <!--======================
-     Team Part HTML End
-    =======================-->
-    <!--======================
-        Latest Updates Part HTML Start
-    =======================-->
 
-    <section id="blog" class="blog section">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-12 ">
-                    <div class="heading b-text text-center">
-                        <h5>explore more</h5>
-                        <h2>Our Blogs</h2>
-                    </div>
-                </div>
 
-            </div>
-            <div class="row">
 
-                <div class="col-lg-5">
-                    <div class="blog-txt">
-                        <div class="blog-img">
-                            <img src="{% static 'images/blog-image-1.jpg' %}" class="img-fluid" alt="blog">
-                        </div>
-                        <div class="blog-inner">
-                            <h3>Posted by:Admin <span>Posted on: 26 April 2020</span></h3>
-                            <h4>What Can I do to protect my self & prevent the risk</h4>
-                            <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.
-                                spreading the risk over numerous.</p>
-                            <a href="blog-details.html">
-                                Read More <i class="fas fa-long-arrow-alt-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 blog-right">
-                    <div class="row blog-txt">
-                        <div class="col-md-5">
-                            <div class="blog-img">
-                                <img src="{% static 'images/blog-image-2.jpg' %}" class="img-fluid" alt="blog">
-                            </div>
 
-                        </div>
-                        <div class="col-md-7">
-                            <div class="blog-inner">
-                                <h3>Posted by:Admin <span>Posted on: 16 May 2020</span></h3>
-                                <h4>This factsheet provides an influ virus situation </h4>
-                                <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.</p>
-                                <a href="blog-details.html">
-                                    Read More <i class="fas fa-long-arrow-alt-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gap-row">
-                        <div class="col-md-5">
-                            <div class="blog-txt">
-                                <div class="blog-img">
-                                    <img src="{% static 'images/blog-image-3.jpg' %}" class="img-fluid" alt="blog">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="blog-inner">
-                                <h3>Posted by:Admin <span>Posted on: 22 May 2020</span></h3>
-                                <h4>What Can I do to protect my self & prevent the spread</h4>
-                                <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.</p>
-                                <a href="b">
-                                    Read More <i class="fas fa-long-arrow-alt-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
+{#    <!--======================#}
+{#     Team Part HTML End#}
+{#    =======================-->#}
+{#    <!--======================#}
+{#        Latest Updates Part HTML Start#}
+{#    =======================-->#}
+{##}
+{#    <section id="blog" class="blog section">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{##}
+{#                <div class="col-12 ">#}
+{#                    <div class="heading b-text text-center">#}
+{#                        <h5>explore more</h5>#}
+{#                        <h2>Our Blogs</h2>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#            <div class="row">#}
+{##}
+{#                <div class="col-lg-5">#}
+{#                    <div class="blog-txt">#}
+{#                        <div class="blog-img">#}
+{#                            <img src="{% static 'images/blog-image-1.jpg' %}" class="img-fluid" alt="blog">#}
+{#                        </div>#}
+{#                        <div class="blog-inner">#}
+{#                            <h3>Posted by:Admin <span>Posted on: 26 April 2020</span></h3>#}
+{#                            <h4>What Can I do to protect my self & prevent the risk</h4>#}
+{#                            <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.#}
+{#                                spreading the risk over numerous.</p>#}
+{#                            <a href="blog-details.html">#}
+{#                                Read More <i class="fas fa-long-arrow-alt-right"></i>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-7 blog-right">#}
+{#                    <div class="row blog-txt">#}
+{#                        <div class="col-md-5">#}
+{#                            <div class="blog-img">#}
+{#                                <img src="{% static 'images/blog-image-2.jpg' %}" class="img-fluid" alt="blog">#}
+{#                            </div>#}
+{##}
+{#                        </div>#}
+{#                        <div class="col-md-7">#}
+{#                            <div class="blog-inner">#}
+{#                                <h3>Posted by:Admin <span>Posted on: 16 May 2020</span></h3>#}
+{#                                <h4>This factsheet provides an influ virus situation </h4>#}
+{#                                <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.</p>#}
+{#                                <a href="blog-details.html">#}
+{#                                    Read More <i class="fas fa-long-arrow-alt-right"></i>#}
+{#                                </a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="row gap-row">#}
+{#                        <div class="col-md-5">#}
+{#                            <div class="blog-txt">#}
+{#                                <div class="blog-img">#}
+{#                                    <img src="{% static 'images/blog-image-3.jpg' %}" class="img-fluid" alt="blog">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="col-md-7">#}
+{#                            <div class="blog-inner">#}
+{#                                <h3>Posted by:Admin <span>Posted on: 22 May 2020</span></h3>#}
+{#                                <h4>What Can I do to protect my self & prevent the spread</h4>#}
+{#                                <p>Health insurance is an insurance that covers the whole or a part of the risk of a person incurring medical expenses.</p>#}
+{#                                <a href="b">#}
+{#                                    Read More <i class="fas fa-long-arrow-alt-right"></i>#}
+{#                                </a>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{##}
+{#    </section>#}
 
     <!--======================
         Blog Part HTML End
@@ -738,16 +846,14 @@
         <div class="container">
             <div class="content-text">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="cont-logo">
-                            <a href="#"><img src="{% static 'images/footer-logo.png' %}" alt="footer logo"></a>
+                            <a href="#"><img src="{% static 'images/finalagapelogo1.webp' %}" alt="footer logo"></a>
                         </div>
                         <div class="cont-txt">
-                            <p class="cont-gap">Invest in your drivers, improve their safety and reduce the risk of incidents with our compre hensive courses and seminars tailored to the needs of your organisation.
+                            <p class="cont-gap">Helping seniors and veterans live a quality, safe, and meaningful life in their Golden Years at a place they can call HOME.
                             </p>
-                            <p>
-                                From lost luggage to unexpected medical expenses.</p>
-                            <ul>
+
 {#                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>#}
 {#                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>#}
 {#                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>#}
@@ -755,64 +861,39 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2  col-md-6 col-sm-12">
-                        <div class="cont-center">
-                            <h3>Important Links</h3>
-                        </div>
 
-                        <div class="c-text-menu1">
-                            <ul>
-                                <li><a href="#">Customer Support</a></li>
-                                <li><a href="#">Retrive Quote</a></li>
-                                <li><a href="#">Unclaimed Amount</a></li>
-                                <li><a href="#">Risk Managements</a></li>
-                                <li><a href="#">Case Studies</a></li>
-                            </ul>
-                        </div>
 
-                    </div>
-                    <div class="col-lg-2  col-md-6 col-sm-12">
-                        <div class="cont-center">
-                            <h3>Privacy & TOS</h3>
-                        </div>
-
-                        <div class="c-text-menu1">
-                            <ul>
-                                <li><a href="#">Advertiser Agreement</a></li>
-                                <li><a href="#">Acceptable Use Policy</a></li>
-                                <li><a href="blog_details.html">Privacy Policy</a></li>
-                                <li><a href="blog_details.html">Technology Privacy</a></li>
-                                <li><a href="#">Developer Agreement</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="cont-center">
                             <h3>Contact us</h3>
                         </div>
                         <div class="c-text-location">
                             <div class="row">
-                                <div class="col-lg-3  col-md-3">
+                                <div class="col-lg-2  col-md-3">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-phone"></i></a></li>
-                                        <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                        <li><a href="https://goo.gl/maps/TgdKPsrFVGKgZ1Zu9" target="_blank"><i class="fas fa-map-marker-alt"></i></a></li>
+                                        <li><a href="tel:4077587236"><i class="fas fa-phone"></i></a></li>
+                                        <li><a href="mailto:agapaseniorresourcesllc@gmail.com"><i class="fas fa-envelope"></i></a></li>
+
                                     </ul>
                                 </div>
                                 <div class="col-lg-9  col-md-9">
                                     <div class="address">
 
-                                        <p>1319 Calle Del Sol Circle, Port Orange, Florida</p>
+                                        <p>1319 Calle Del Sol Circle, Port Orange, Florida</p><br>
 
                                         <p>(407) 758 7236<br>
                                         <br>
                                         <p>agapaseniorresourcesllc@gmail.com<br>
 
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <h5 style="padding-top: 40px;text-decoration: underline; color: white">Hours of operation</h5>
+                        <h6 style="color: white;">Monday-Friday 9AM - 5 PM</h6>
                     </div>
                 </div>
             </div>
@@ -820,7 +901,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <p>Copyright © 2020. All rights reserved by <a href="#">Aga-Pa</a></p>
+                            <p>Copyright © 2021. All rights reserved by <a href="#">Aga-Pa</a></p>
                         </div>
 
                     </div>

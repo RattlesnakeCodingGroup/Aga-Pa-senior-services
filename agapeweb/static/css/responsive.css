@@ -264,14 +264,14 @@ Author:         Ingenioushubs
 
     .menu-icon {
         margin-top: 6px;
-        margin-left: -6px;
+        margin-left: -10px;
     }
 
     .menu-icon i {
         font-size: 14px;
-        padding: 12px 0;
-        height: 40px;
-        width: 40px;
+        /*padding: 10px 0;*/
+        height: 20px;
+        width: 20px;
     }
 
     .dropdown-menu > li > a {
